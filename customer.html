@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Customer Management</h1>
+
+    <!-- Create Customer Section -->
+    <h2>Create Customer</h2>
+    <form id="createCustomerForm">
+        <input type="text" id="createName" placeholder="Name" required>
+        <input type="email" id="createEmail" placeholder="Email" required>
+        <input type="tel" id="createPhone" placeholder="Phone" required>
+        <button type="submit">Create Customer</button>
+    </form>
+
+    <!-- Read Customer Section -->
+    <h2>Read Customer</h2>
+    <input type="number" id="readCustomerId" placeholder="Customer ID">
+    <button onclick="readCustomer()">Read Customer</button>
+    <div id="readCustomerDetails"></div>
+
+    <!-- Update Customer Section -->
+    <h2>Update Customer</h2>
+    <input type="number" id="updateCustomerId" placeholder="Customer ID">
+    <input type="text" id="updateName" placeholder="Name">
+    <input type="email" id="updateEmail" placeholder="Email">
+    <input type="tel" id="updatePhone" placeholder="Phone">
+    <button onclick="updateCustomer()">Update Customer</button>
+
+    <!-- Delete Customer Section -->
+    <h2>Delete Customer</h2>
+    <input type="number" id="deleteCustomerId" placeholder="Customer ID">
+    <button onclick="deleteCustomer()">Delete Customer</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
